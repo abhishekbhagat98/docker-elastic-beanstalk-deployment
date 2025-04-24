@@ -2,6 +2,12 @@
 
 This project demonstrates how to containerize a web application using **Docker** and deploy it to **AWS Elastic Beanstalk**. The application is a simple Nginx server with a custom HTML page.
 
+## 🔁 Data Flow Diagram
+
+Below is the high-level architecture of this project:
+
+![Data Flow](./data-flow-docker-container.png)
+
 ## 🛠️ What I Did
 
 - Learned how **Docker** containers work and created a basic web app using **Nginx**.
@@ -11,18 +17,25 @@ This project demonstrates how to containerize a web application using **Docker**
 
 ## 🐳 Dockerfile Example
 
+Here is an example of the `Dockerfile` used in this project:
+
 ```dockerfile
 FROM nginx:latest
 COPY index.html /usr/share/nginx/html/
 EXPOSE 80
+```
 
-## Built the Image With:
+### 🔨 Build the Docker Image
+
+Run the following command to build the Docker image:
 
 ```bash
 docker build -t my-web-app .
 ```
 
-## Ran the Container With:
+### 🚀 Run the Docker Container
+
+Use this command to run the container locally:
 
 ```bash
 docker run -p 80:80 my-web-app
