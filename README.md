@@ -16,22 +16,26 @@ FROM nginx:latest
 COPY index.html /usr/share/nginx/html/
 EXPOSE 80
 
+## Built the Image With:
 
-## Built the image with:
-
+```bash
 docker build -t my-web-app .
+```
 
-## Ran the container with:
+## Ran the Container With:
 
+```bash
 docker run -p 80:80 my-web-app
+```
 
 ## 🌱 Key Learnings
-	•	Containers simplify deployment and ensure consistency.
-	•	Docker Desktop helps debug container issues easily.
-	•	Elastic Beanstalk provides a quick way to host Docker containers without managing infrastructure manually.
+
+- Containers simplify deployment and ensure consistency.
+- Docker Desktop helps debug container issues easily.
+- Elastic Beanstalk provides a quick way to host Docker containers without managing infrastructure manually.
 
 ## 📎 Documentation
 
-Detailed walk-through with step-by-step notes:
+For a detailed walk-through with step-by-step notes, refer to:
 
-📄 Containers on AWS Elastic Beanstalk.pdf  (./Containers%20on%20AWS%20Elastic%20Beanstalk.pdf)
+[📄 Containers on AWS Elastic Beanstalk.pdf](./Containers%20on%20AWS%20Elastic%20Beanstalk.pdf)
